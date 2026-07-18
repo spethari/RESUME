@@ -5,34 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surendra Pethari - Professional Resume</title>
     <style>
-        /* General Styles */
         body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 20px; line-height: 1.5; font-size: 11pt; color: #333; }
-        .resume { max-width: 800px; background: #fff; padding: 40px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-top: 8px solid #005582; position: relative; }
-        
-        /* Action Buttons Styling */
-        .no-print-actions {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 14px;
-            transition: 0.3s;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-        }
-        .btn-print { background-color: #005582; color: white; }
-        .btn-download { background-color: #28a745; color: white; }
-        .btn:hover { opacity: 0.8; }
-
-        /* Resume Content Styling */
+        .resume { max-width: 800px; background: #fff; padding: 40px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); border-top: 8px solid #005582; }
         h1 { margin: 0; color: #005582; font-size: 26pt; text-align: center; }
         .header-title { text-align: center; font-weight: bold; color: #666; margin-bottom: 15px; font-size: 1.1em; }
         .contact-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid #ddd; padding-bottom: 20px; margin-bottom: 25px; font-size: 0.95em; }
@@ -44,83 +18,86 @@
         .company { color: #0077b5; font-style: italic; }
         ul { padding-left: 20px; margin: 8px 0; }
         li { margin-bottom: 6px; }
-
-        /* PRINT SETTINGS */
-        @media print {
-            body { background: #fff; padding: 0; }
-            .resume { box-shadow: none; max-width: 100%; border: none; padding: 0; }
-            .no-print-actions { display: none !important; } /* Hides buttons when printing/saving */
-        }
+        @media print { body { background: #fff; padding: 0; } .resume { box-shadow: none; max-width: 100%; border: none; } }
     </style>
 </head>
 <body>
 
-    <!-- Top Action Buttons -->
-    <div class="no-print-actions">
-        <button class="btn btn-print" onclick="window.print()">Print Resume</button>
-        <button class="btn btn-download" onclick="window.print()">Download as PDF</button>
+<div class="resume">
+    <h1>SURENDRA PETHARI</h1>
+    <div class="header-title">Mortgage Underwriter | Technical Specialist</div>
+    
+   <div class="contact-grid">
+    <span>📍 Village Bardha, Sehore 466446</span>
+
+    <span>📞 
+        <a href="tel:+918889128228">+91 88891 28228</a>,
+        <a href="tel:+918989128228">+91 89891 28228</a>
+    </span>
+
+    <span>💬 
+        <a href="https://wa.me/918889128228" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </span>
+
+    <span>📧 
+        <a href="mailto:spethari.org@gmail.com">spethari.org@gmail.com</a>
+    </span>
+
+    <span>🔗 
+        <a href="https://www.linkedin.com/in/surendra-pethari-6a363b149" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </span>
+
+    <span>💻 
+        <a href="https://github.com/spethari/RESUME" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </span>
+</div>
+    <h2>Professional Summary</h2>
+    <p>Analytical and detail-oriented Senior Mortgage Underwriter with over 6 years of experience in credit analysis and risk assessment. Expertise in end-to-end credit decisioning, DTI/LTV calculations, and complex income verification. Certified Lean Six Sigma Black Belt dedicated to ensuring 100% SLA adherence and zero-defect quality standards.</p>
+
+    <h2>Core Skills</h2>
+    <div class="skill-item"><span class="skill-category">Mortgage:</span> Pre-Underwriting, Document Review, Compliance, FHA/VA Guidelines</div>
+    <div class="skill-item"><span class="skill-category">Income:</span> Paystubs, W-2, 1040 Analysis, Self-Employed Verification</div>
+    <div class="skill-item"><span class="skill-category">Financial:</span> Bank Statements, LTV Validation, Debt-to-Income (DTI) Assessment</div>
+    <div class="skill-item"><span class="skill-category">Tools:</span> Advanced Excel, Power BI (PL-300), Bancs, Finacle</div>
+    <div class="skill-item"><span class="skill-category">Quality:</span> Lean Six Sigma Black Belt, Fraud Detection, SLA Management</div>
+
+    <h2>Professional Experience</h2>
+    
+    <div class="job-header">
+        <span>Technical Specialist (Pre-Underwriting)</span>
+        <span>Jun 2022 – Dec 2025</span>
     </div>
+    <div class="company">Tata Consultancy Services | Indore, India</div>
+    <ul>
+        <li>Analyzed complex mortgage files across Insurance and Canada Mortgage operations to ensure completeness prior to final underwriting.</li>
+        <li>Verified diverse income sources (W-2, 1040) and employment history to mitigate borrower risk.</li>
+        <li>Performed rigorous quality reviews of bank statements and financial documentation for LTV validation.</li>
+        <li>Utilized Power BI and Advanced Excel to prepare MIS reports, improving team production tracking and visibility.</li>
+        <li>Maintained consistent 100% accuracy and SLA targets while handling high-volume daily production.</li>
+    </ul>
 
-    <div class="resume" id="resume-content">
-        <h1>SURENDRA PETHARI</h1>
-        <div class="header-title">Mortgage Underwriter | Technical Specialist</div>
-        
-        <div class="contact-grid">
-            <span>📍 Village Bardha, Sehore 466446</span>
-            <span>📞 <a href="tel:8889128228">8889128228</a></span>
-            <span>📧 <a href="mailto:spethari.org@gmail.com">spethari.org@gmail.com</a></span>
-            <span>💬 <a href="https://wa.me" target="_blank">WhatsApp</a></span>
-            <span>🔗 <a href="http://linkedin.com" target="_blank">LinkedIn</a></span>
-        </div>
-
-        <h2>Professional Summary</h2>
-        <p>Analytical and detail-oriented Senior Mortgage Underwriter with over 6 years of experience in credit analysis and risk assessment. Expertise in end-to-end credit decisioning, DTI/LTV calculations, and complex income verification. Certified Lean Six Sigma Black Belt dedicated to ensuring 100% SLA adherence and zero-defect quality standards.</p>
-
-        <h2>Core Skills</h2>
-        <div class="skill-item"><span class="skill-category">Mortgage:</span> Pre-Underwriting, Document Review, Compliance, FHA/VA Guidelines</div>
-        <div class="skill-item"><span class="skill-category">Income:</span> Paystubs, W-2, 1040 Analysis, Self-Employed Verification</div>
-        <div class="skill-item"><span class="skill-category">Financial:</span> Bank Statements, LTV Validation, Debt-to-Income (DTI) Assessment</div>
-        <div class="skill-item"><span class="skill-category">Tools:</span> Advanced Excel, Power BI (PL-300), Bancs, Finacle</div>
-        <div class="skill-item"><span class="skill-category">Quality:</span> Lean Six Sigma Black Belt, Fraud Detection, SLA Management</div>
-
-        <h2>Professional Experience</h2>
-        
-        <div class="job-header">
-            <span>Technical Specialist (Pre-Underwriting)</span>
-            <span>Jun 2022 – Dec 2025</span>
-        </div>
-        <div class="company">Tata Consultancy Services | Indore, India</div>
-        <ul>
-            <li>Analyzed complex mortgage files across Insurance and Canada Mortgage operations to ensure completeness prior to final underwriting.</li>
-            <li>Verified diverse income sources (W-2, 1040) and employment history to mitigate borrower risk.</li>
-            <li>Performed rigorous quality reviews of bank statements and financial documentation for LTV validation.</li>
-            <li>Utilized Power BI and Advanced Excel to prepare MIS reports, improving team production tracking and visibility.</li>
-            <li>Maintained consistent 100% accuracy and SLA targets while handling high-volume daily production.</li>
-        </ul>
-
-        <div class="job-header">
-            <span>Phone Banking Officer</span>
-            <span>Feb 2020 – May 2022</span>
-        </div>
-        <div class="company">Firstsource Solutions | BFSI Operations</div>
-        <ul>
-            <li>Handled critical customer support operations for BFSI clients, ensuring documentation met quality standards.</li>
-            <li>Resolved complex customer queries regarding financial accounts while adhering to strict turnaround times (SLA).</li>
-            <li>Verified and processed client documentation for various banking services with high precision.</li>
-        </ul>
-
-        <h2>Certifications</h2>
-        <ul>
-            <li><strong>Lean Six Sigma Black Belt</strong> & <strong>Green Belt</strong></li>
-            <li><strong>Power BI Professional</strong> (PL-300 Prep)</li>
-            <li>Commercial Credit Analysis & Mortgage Credit Reports Certified</li>
-        </ul>
-
-        <h2>Education</h2>
-        <p><strong>Bachelor of Science & Bachelor of Education (B.Sc B.Ed)</strong><br>
-        <em>Four-year Integrated course related to R.I.E.</em><br>
-        Barkatullah University, Bhopal</p>
+    <div class="job-header">
+        <span>Phone Banking Officer</span>
+        <span>Feb 2020 – May 2022</span>
     </div>
+    <div class="company">Firstsource Solutions | BFSI Operations</div>
+    <ul>
+        <li>Handled critical customer support operations for BFSI clients, ensuring documentation met quality standards.</li>
+        <li>Resolved complex customer queries regarding financial accounts while adhering to strict turnaround times (SLA).</li>
+        <li>Verified and processed client documentation for various banking services with high precision.</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+        <li><strong>Lean Six Sigma Black Belt</strong> & <strong>Green Belt</strong></li>
+        <li><strong>Power BI Professional</strong> (PL-300 Prep)</li>
+        <li>Commercial Credit Analysis & Mortgage Credit Reports Certified</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science & Bachelor of Education (B.Sc B.Ed) four years Integrated course releted to R.I.E.</strong><br>
+    Barkatullah University, Bhopal</p>
+</div>
 
 </body>
 </html>
